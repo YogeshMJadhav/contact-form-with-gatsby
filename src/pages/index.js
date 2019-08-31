@@ -8,9 +8,21 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+      <form name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label>Your Name: <input type="text" name="name"/></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email"/></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
