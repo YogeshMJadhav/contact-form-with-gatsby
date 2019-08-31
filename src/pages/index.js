@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-      <form name="contact" method="post">
+      <form name="contact" method="post" netlify netlify-honeypot="bot-field" hidden>
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Your Name: <input type="text" name="name"/></label>
