@@ -18,7 +18,7 @@ const IndexPage = () => (
       </div>
       <div className="field half first">
         <label htmlFor="name">Last Name</label>
-        <input type="text" name="lastname" id="name" />
+        <input type="text" name="lastname" id="lastname" />
       </div>
       <div className="field half">
         <label htmlFor="email">Email</label>
